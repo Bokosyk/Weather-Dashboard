@@ -5,14 +5,11 @@ $(document).ready(function () {
     $("#city-input").keypress(function (event) {
       var keycode2 = event.keyCode ? event.keyCode : event.which;
       if (keycode2 == "13") {
-        // console.log($("#city-input").val());
-        // runPlaylist(event.target.value.trim());
-  
+       
         // gets the user input and store it as a variable
         var citySearch = $("#city-input").val();
         // gets the weather data for the user input
         weather(citySearch);
-        runPlaylist2(event.target.value.trim());
       }
     });
   
