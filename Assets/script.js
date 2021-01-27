@@ -7,8 +7,8 @@ $(document).ready(function () {
     var queryURL = "api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + APIkey;
 
     //Returns search button
-    $("search-button").on("click", function() {
-        var searchValue = $("#search-value").val()
+    $("#search-button").on("click", function() {
+        let searchValue = $("#search-value").val()
         console.log(searchValue);
         $("#search-value").val("")
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
     })
 
    
-    function searchWeather(searchvalue) {
+    function searchWeather(searchValue) {
 
         //Here we run our AJAX call to the OpenWeatherMap API
         $.ajax({
@@ -38,12 +38,13 @@ $(document).ready(function () {
             //Transfers content to HTML
             $("#city").html("<h1>" + response.name + " Weather Details</h1>");
             $("#wind").text("Humidity: " + response.wind.speed);
+            $("#humid").text("Humidity: " + response.main.humidity);
             
-        })
+        });
     }
 
 
 
 
 
-})
+});
