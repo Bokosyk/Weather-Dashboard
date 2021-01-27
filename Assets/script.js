@@ -12,7 +12,7 @@ $(document).ready(function () {
         console.log(searchValue);
         $("#search-value").val("")
 
-        //Pass in searchValue
+        //Pass in searchValue to searchWeather
         searchWeather(searchValue);
     })
 
@@ -36,6 +36,8 @@ $(document).ready(function () {
             console.log(response);
 
             //Transfers content to HTML
+            $("#city").html("<h1>" + response.name + " Weather Details</h1>");
+            $("#wind").text("Humidity: " + response.wind.speed);
             
         })
     }
