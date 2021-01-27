@@ -43,25 +43,35 @@
                 <ul class="list-group history"></ul>
             </aside>
 
-            <!-- Current Forecast -->
-            <div class="col-lg-9">
-                <div id="today" class="mt-3"></div>
-                <div id="forecast" class="mt-3"></div>
+            <!-- Card Body -->
+            <div class="card w-75">
+                <div class="card-body">
+                    <h5 class="card-title" id="city">City Name (Date)</h5>
+                    <p class="card-text"><span id="temp"></span> °F</p>
+                    <p class="card-text"><span id="humid"></span> %</p>
+                    <p class="card-text"><span id="wind"></span> mph</p>
+                    <p class="card-text"><span id="indexUV"></span></p>
+                </div>
             </div>
+
+            <!-- Future Forecast Tabs -->
+            <section class="col-sm-12" id ="future-forecast">
+                <h3>5-Day Forecast:</h3>
+                <div class="row text-light">
+                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                        <p id="tabDate1"></p>
+                        <p id="tabDate1"></p>
+                        <p>Temp:<span id="tempTab1"></span></p>
+                        <p>Humidity:<span id="humidityTab1"></span></p>
+                    </div>
+                    
+            </section>
+
+            
         </div>
     </div>
 
     <!-- <section> -->
-    <!-- Card Body -->
-    <div class="card w-75">
-        <div class="card-body">
-            <h5 class="card-title" id="city">City Name (Date)</h5>
-            <p class="card-text"><span id="temp"></span> °F</p>
-            <p class="card-text"><span id="humid"></span> %</p>
-            <p class="card-text"><span id="wind"></span> mph</p>
-            <p class="card-text"><span id="indexUV"></span></p>
-        </div>
-    </div>
 
     <div>
 
@@ -69,18 +79,18 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="./Assets/script.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./Assets/script.js"></script>
 </body>
 
 </html>
