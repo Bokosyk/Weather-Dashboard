@@ -8,15 +8,17 @@ $(document).ready(function () {
 
     //Returns search button
     $("#search-button").on("click", function() {
-        let searchValue = $("#search-value").val()
+        var searchValue = $("#search-value").val()
         console.log(searchValue);
+
+        // Clears out field after the button is clicked.
         $("#search-value").val("")
 
-        //Pass in searchValue to searchWeather
-        searchWeather(searchValue);
-    })
+       //Pass in searchValue to searchWeather
+       searchWeather(searchValue);
+    });
 
-   
+    
     function searchWeather(searchValue) {
 
         //Here we run our AJAX call to the OpenWeatherMap API
