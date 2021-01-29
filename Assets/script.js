@@ -21,7 +21,7 @@ $(document).ready(function () {
     function searchWeather(searchValue) {
 
         //Here we are building the URL we need to query the database
-        var queryURL = "api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + APIkey;
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + APIkey;
 
         //Here we run our AJAX call to the OpenWeatherMap API
         $.ajax({
