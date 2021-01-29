@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    // variable declaration
+    var history = [];
+
+    //Checks to see if city exists in localStorage.
+    function browse(city){
+        for (var i=0; i<history.length; i++){
+            if(city.toUpperCase()===history[i]){
+                return -1;
+            }
+        }
+ 
+        return 1;
+        
+    }
+
     //This is our API key
     const APIkey = "f23a679e1f1c0c137cb62393cae527e6";
 
@@ -38,6 +53,10 @@ $(document).ready(function () {
             
             //Logs resulting object
             console.log(response);
+
+            //Shows icon
+            var weatherIcon = response.weather[0];
+            var iconURL = "https://openweathermap.org/img/wn/"+ weatherIcon +"@2x.png";
 
             //Transfers content to HTML
             $("#city").html("<h1>" + response.name + " Weather Details</h1>");
