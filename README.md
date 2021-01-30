@@ -1,46 +1,59 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) Link: https://opensource.org/licenses/MIT
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+## Description 
+A weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It retrieves weather data for cities using the OpenWeather API and uses localStorage to store any persistent data.
 
-## User Story
+## Table of Contents (Optional)
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+* [Installation](#installation)
+* [Usage](#usage)
+* [Features](#features)
+* [License](#license)
 
-## Acceptance Criteria
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-WHEN I open the weather dashboard
-THEN I am presented with the last searched city forecast
-```
+## Installation
 
-The following image demonstrates the application functionality:
+You can simply click on the link to the web page or perform a git clone onto your local computer and run the application manually using a code editor of your choice.
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
+## Usage 
 
-## Review
+![Weather Dashboard](Assets\06-server-side-apis-homework-demo.png)
 
-You are required to submit the following for review:
+Step 1. Open up the web page. Step 2. Type in a city in the United States in the search bar. The application will automatically pull up current weather information and a future five day forecast. Step 3. Click the clear history button when you'd like to delete a previously stored city.
 
-* The URL of the deployed application.
+## License
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+        Copyright (C) 2020  <name of author>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+---
+
+## Features
+
+Features dynamically updated HTML and CSS. Pulls up accurate weather data for any city in the United States of America. Pulls up a five day future forecast for any city in the United States of America.
+
+## Contributing
+
+Leandro Parrado
+
+## Tests
+
+(WIP)
+
+## Questions
+
+To reach me for any questions or concerns, see below.
+
+Github Link: https://github.com/Bokosyk
+Email: lparrado321@gmail.com
+
+---
+
+© 2021. All Rights Reserved.
