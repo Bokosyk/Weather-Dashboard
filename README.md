@@ -19,7 +19,7 @@ You can simply click on the link to the web page or perform a git clone onto you
 
 ## Usage 
 
-![Weather Dashboard](Assets\06-server-side-apis-homework-demo.png)
+![Weather Dashboard](https://github.com/Bokosyk/Weather-Dashboard/blob/main/Assets/06-server-side-apis-homework-demo.png?raw=true)
 
 Step 1. Open up the web page.
 
