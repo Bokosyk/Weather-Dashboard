@@ -21,7 +21,11 @@ You can simply click on the link to the web page or perform a git clone onto you
 
 ![Weather Dashboard](Assets\06-server-side-apis-homework-demo.png)
 
-Step 1. Open up the web page. Step 2. Type in a city in the United States in the search bar. The application will automatically pull up current weather information and a future five day forecast. Step 3. Click the clear history button when you'd like to delete a previously stored city.
+Step 1. Open up the web page.
+
+Step 2. Type in a city in the United States in the search bar. The application will automatically pull up current weather information and a future five day forecast.
+
+Step 3. Click the clear history button when you'd like to delete a previously stored city.
 
 ## License
 
